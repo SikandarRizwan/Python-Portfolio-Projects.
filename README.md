@@ -1,10 +1,5 @@
-Python Portfolio Projects
-A collection of Python projects and exercises from university coursework and online learning platforms.
-
-WK2EX9 [P] Postal Program
-This program checks if a package meets postal requirements based on its weight, length, and diameter.
-
-Python
+# WK2EX9 [P] Postal Program (4 marks)
+# This program checks if a package meets postal requirements based on its weight, length, and diameter.
 
 weight = int(input('Enter weight (g) '))
 length = int(input('Enter length (cm) '))
@@ -14,10 +9,10 @@ if (weight <= 2000) and (length <= 90) and (length + (2*diameter) <= 104):
     print('Yes')
 else:
     print('No')
-WK2EX10 [P] Overlapping Events
-A function that determines if two events, defined by a start time and duration, overlap.
 
-Python
+
+# WK2EX10 [P] Overlapping Events (4 marks)
+# A function that determines if two events, defined by a start time and duration, overlap.
 
 def overlapchecker(beginA, timeA, beginB, timeB):
     endA = beginA + timeA
@@ -36,10 +31,10 @@ if overlapchecker(beginA, timeA, beginB, timeB):
     print("Events A and B do overlap")
 else:
     print("Events A and B do not overlap")
-WK3EX7 [P] Lojban Numbers
-This program translates a given number into its equivalent in Lojban, a logical language.
 
-Python
+
+# WK3EX7 [P] Lojban Numbers (4 marks)
+# This program translates a given number into its equivalent in Lojban, a logical language.
 
 LojbanNumbers = {
     '0': 'no',
@@ -62,10 +57,10 @@ else:
     TranslatingLojban = ''.join(LojbanNumbers[digit] for digit in number)
 
 print(TranslatingLojban)
-WK3EX8 [P] Bingo Card
-A program that generates and displays a random Bingo card.
 
-Python
+
+# WK3EX8 [P] Bingo Card (4 marks)
+# A program that generates and displays a random Bingo card.
 
 import random
 
@@ -76,10 +71,10 @@ grid = [grid_of_numbers[i:i + 5] for i in range(0, 25, 5)]
 
 for row in grid:
     print(" ".join(f"{num:2}" for num in row))
-WK4EX7 [P] Count Multiples
-This function counts how many numbers in a given list are multiples of a specific integer.
 
-Python
+
+# WK4EX7 [P] count multiples (4 marks)
+# This function counts how many numbers in a given list are multiples of a specific integer.
 
 def count_multiples(n, numlist):
     count = 0
@@ -87,10 +82,10 @@ def count_multiples(n, numlist):
         if element % n == 0:
             count += 1
     return count
-WK4EX8 [P] Longest Streak
-A function that finds the longest consecutive streak of a specific word in a list of words.
 
-Python
+
+# WK4EX8 [P] longest streak (4 marks)
+# A function that finds the longest consecutive streak of a specific word in a list of words.
 
 def longest_streak(word, word_list):
     max_streak = 0
